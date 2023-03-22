@@ -1,15 +1,21 @@
 package model;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class TrianguloTest {
 
-    Triangulo triangulo = new Triangulo();
-    Triangulo triangulo1 = new Triangulo();
-    Triangulo triangulo2 = new Triangulo();
+    Triangulo resultado;
+    Triangulo triangulo1;
+    Triangulo triangulo2;
 
-
+    @Before
+    public void before() {
+        resultado = new Triangulo();
+        triangulo1 = new Triangulo();
+        triangulo2 = new Triangulo();
+    }
     @Test
     public void trianguloDeMenorAreaDeveTerAreaMenorQueDoTriangulo2() {
         triangulo1.setBase(3);
@@ -17,7 +23,7 @@ public class TrianguloTest {
         triangulo2.setBase(6);
         triangulo2.setAltura(8);
 
-        Triangulo resultado = triangulo.trianguloDeMenorArea(triangulo1, triangulo2);
+        resultado = resultado.trianguloDeMenorArea(triangulo1, triangulo2);
 
         Assert.assertTrue(resultado.calcularAreaTriangulo() < triangulo2.calcularAreaTriangulo());
 
@@ -30,7 +36,7 @@ public class TrianguloTest {
         triangulo2.setBase(3);
         triangulo2.setAltura(4);
 
-        Triangulo resultado = triangulo.trianguloDeMenorArea(triangulo1, triangulo2);
+        resultado = resultado.trianguloDeMenorArea(triangulo1, triangulo2);
 
         Assert.assertFalse(resultado.calcularAreaTriangulo() > triangulo2.calcularAreaTriangulo());
 
@@ -43,7 +49,7 @@ public class TrianguloTest {
         triangulo2.setBase(3);
         triangulo2.setAltura(4);
 
-        Triangulo resultado = triangulo.trianguloDeMenorArea(triangulo1, triangulo2);
+        resultado = resultado.trianguloDeMenorArea(triangulo1, triangulo2);
 
         Assert.assertNull(resultado);
 
