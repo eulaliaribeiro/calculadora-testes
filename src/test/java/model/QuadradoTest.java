@@ -3,7 +3,7 @@ package model;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class QuadradoTeste {
+public class QuadradoTest {
 
     Quadrado quadrado = new Quadrado();
     Quadrado quadrado1 = new Quadrado();

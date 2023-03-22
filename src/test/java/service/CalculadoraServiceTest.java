@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class CalculadoraServiceTeste {
+public class CalculadoraServiceTest {
 
     CalculadoraService calculadoraService = new CalculadoraService();
     int a;

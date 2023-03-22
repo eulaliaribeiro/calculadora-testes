@@ -3,7 +3,7 @@ package model;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TrianguloTeste {
+public class TrianguloTest {
 
     Triangulo triangulo = new Triangulo();
     Triangulo triangulo1 = new Triangulo();
