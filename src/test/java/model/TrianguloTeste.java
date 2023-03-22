@@ -45,7 +45,7 @@ public class TrianguloTeste {
 
         Triangulo resultado = triangulo.trianguloDeMenorArea(triangulo1, triangulo2);
 
-        Assert.assertEquals(null, resultado);
+        Assert.assertNull(resultado);
 
     }
 
